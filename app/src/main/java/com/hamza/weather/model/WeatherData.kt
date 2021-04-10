@@ -29,7 +29,7 @@ data class Clouds(
 )
 
 
-@Entity(indices = [Index(value = ["uid"], unique = true)])
+@Entity(indices = [Index(value = ["uid"])])
 data class Main(
 
         @PrimaryKey (autoGenerate = true) val uid: Int,
@@ -58,9 +58,10 @@ data class Weather(
 )
 
 data class Wind(
-
         @SerializedName("speed") var speed: Double,
         @SerializedName("deg") var deg: Long
 )
+
+
 
 

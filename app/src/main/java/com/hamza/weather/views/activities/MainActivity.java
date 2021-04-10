@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         initView();
 
-        search_ET.setText("Islamabad");
+        //search_ET.setText("Islamabad");
         proceed_btn.setOnClickListener(v -> {
             hideKeyboard(MainActivity.this);
             nodataTxt.setVisibility(View.GONE);

@@ -2,7 +2,6 @@ package com.hamza.weather.networkManager;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.hamza.weather.model.Weather;
 import com.hamza.weather.model.WeatherData;
 
 import java.util.ArrayList;
@@ -18,8 +17,6 @@ public class ApiResponse {
     @Expose
     private int respMessage;
 
-
-
     @SerializedName("list")
     @Expose
     private ArrayList<WeatherData> data;
@@ -32,12 +29,9 @@ public class ApiResponse {
         this.data = data;
     }
 
-
-
     public Integer getRespCode() {
         return respCode;
     }
-
     public void setRespCode(Integer respCode) {
         this.respCode = respCode;
     }
@@ -45,7 +39,6 @@ public class ApiResponse {
     public int getRespMessage() {
         return respMessage;
     }
-
     public void setRespMessage(int respMessage) {
         this.respMessage = respMessage;
     }

@@ -19,7 +19,6 @@ public class DatabaseClient {
         //creating the app database with Room database builder
         appDatabase = Room.databaseBuilder(mCtx, AppDatabase.class, "WeatherDB")
                 .fallbackToDestructiveMigration()
-
                 .build();
     }
 

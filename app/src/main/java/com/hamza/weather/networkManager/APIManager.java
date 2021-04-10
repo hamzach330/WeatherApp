@@ -1,21 +1,13 @@
 package com.hamza.weather.networkManager;
 
 
-import android.os.AsyncTask;
-import android.util.Base64;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-
-
 import com.hamza.weather.BuildConfig;
-import com.hamza.weather.database.DatabaseClient;
-
-
 import java.net.ConnectException;
 import java.net.SocketTimeoutException;
 import java.util.concurrent.TimeUnit;
-
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
 import retrofit2.Retrofit;
@@ -24,13 +16,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class APIManager {
     private static final String TAG = "APIManager";
     private static final APIManager instance = new APIManager();
-    public static int reqType_ENCYRPT = 1;
-    public static int reqType_Simple = 2;
     private Retrofit retrofit;
-    private static boolean updateToken = false;
-
     private String AppId;
-    Call<ApiResponse> requestFalse = null;
+
 
     public interface Callback {
         void onSuccess(int code, ApiResponse response);
@@ -66,7 +54,6 @@ public class APIManager {
 
 
     private void sendRequest(final Callback callback, Call<ApiResponse> result, Boolean flag) {
-        updateToken = flag;
         result.clone().enqueue(new retrofit2.Callback<ApiResponse>() {
             @Override
             public void onResponse(@NonNull Call<ApiResponse> call, @NonNull retrofit2.Response<ApiResponse> response) {
