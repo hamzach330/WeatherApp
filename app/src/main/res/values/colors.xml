@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A550</color>
+    <color name="colorPrimaryDark">#00A550</color>
+    <color name="colorAccent">#00A550</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#EC1D24</color>
+    <color name="colorGreen">#00A550</color>
+    <color name="colorGreenlight">#5BA880</color>
+    <color name="colorTransparent">#0000A550</color>
+    <color name="color_viewpager_bg">#E5E5E9</color>
+
+
+    <color name="primaryColor">#00a550</color>
+    <color name="primaryLightColor">#54d87e</color>
+    <color name="primaryDarkColor">#007524</color>
+    <color name="secondaryColor">#ec1d24</color>
+    <color name="secondaryLightColor">#ff5f4e</color>
+    <color name="secondaryDarkColor">#b10000</color>
+    <color name="darkTextColor">#3D3D3D</color>
+    <color name="lightTextColor">#A8A8A8</color>
+
+
+    <!--   All Text Colors Here -->
+    <color name="txt_color_Lightgrey">#A8A8A8</color>
+    <color name="txt_color_Lightgrey_2">#DFDFDF</color>
+    <color name="txt_color_Darkgrey">#3D3D3D</color>
+    <color name="txt_color_Black">#DDDDE1</color>
+
+
+    <color name="color_Bus_Route_01">#1B994F</color>
+    <color name="color_Bus_Route_02">#CA0325</color>
+    <color name="color_Bus_Route_03">#C52A6D</color>
+    <color name="color_Bus_Route_04">#29447C</color>
+    <color name="color_Bus_Route_05">#6A6E6E</color>
+    <color name="color_Bus_Route_06">#481C5F</color>
+    <color name="color_Bus_Route_07">#D0592D</color>
+
+
+</resources>
